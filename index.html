@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="icon" href="images/open-book.png" type="image/gif">
+<meta name="keywords" content="ITB, Institute of Technology, Blanchardstown, Blanch, history, ecology" />
+<meta name="description" content="Story of ITB is a website dedicated to the history of ITB and surrounding area. It was made for a Second Year Web Design Assignment" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Story of ITB</title>
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css"/> <!--  I tried to do fonts with @font-face, but it just doesn't want to work... -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<!-- ---------------------------------- BODY ---------------------------------- -->
+<body>
+<div id="wrapper">
+	<div id="logo" class="container">
+		<h1>Story of ITB</h1>
+		<p>makes us look back on where we've come from and reflect on ITB's journey to get to where we are now.</p>
+	</div>
+	
+<!-- ---------------------------------- DROPDOWN MENU ---------------------------------- -->
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li class="current_page_item"><a href="index.html">Homepage</a></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">History of ITB &darr;</a>
+				<div class="dropdown-content">
+					<a href="buildings.html">Buildings</a>
+					<a href="website.html">Website</a>
+					<a href="logo.html">Logo</a>
+				</div></li>	
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Ecology &darr;</a>
+				<div class="dropdown-content">
+					<a href="nature.html">Nature</a>
+					<a href="animals.html">Animals</a>
+					<a href="horticulture.html">Horticulture</a>
+				</div></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Local History &darr;</a>
+				<div class="dropdown-content">
+					<a href="evolution.html">Evolution of the area</a>
+					<a href="townhistory.html">History of town</a>
+				  </div></li>
+				
+				<li><a href="perspectives.html">Staff Perspectives</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- ---------------------------------- COLLAPSED NAV FOR MOBILE ---------------------------------- -->
+	 	<nav class="clearfix">
+		<ul class="clearfix">
+            <li class="current_page_item"><a href="index.html">Home</a></li>
+            <li><a href="#">History of ITB &darr;</a></li>
+			<li><a href="buildings.html">&nbsp;&nbsp;&nbsp;&nbsp;Buildings</a></li>
+			<li><a href="website.html">&nbsp;&nbsp;&nbsp;&nbsp;Website</a></li>
+			<li><a href="logo.html">&nbsp;&nbsp;&nbsp;&nbsp;Logo</a></li>
+			<li><a href="#">Ecology &darr;</a></li>
+			<li><a href="nature.html">&nbsp;&nbsp;&nbsp;&nbsp;Nature</a></li>
+			<li><a href="animals.html">&nbsp;&nbsp;&nbsp;&nbsp;Animals</a></li>
+			<li><a href="horticulture.html">&nbsp;&nbsp;&nbsp;&nbsp;Horticulture</a></li>
+			<li><a href="#">Local History &darr;</a></li>
+            <li><a href="evolution.html">&nbsp;&nbsp;&nbsp;&nbsp;Evolution of the area</a></li>
+            <li><a href="townhistory.html">&nbsp;&nbsp;&nbsp;&nbsp;History of town</a></li>
+			<li><a href="perspectives.html">Staff Perspectives</a></li>
+        </ul>
+				<a href="#" id="pull">Menu</a>
+    </nav>
+	
+<!-- ---------------------------------- CONTENT ---------------------------------- -->
+	<div id="page" class="container">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">Welcome to the Story of ITB</h2>
+				<div class="entry">
+					<p>It's good to see someone here... Someone interesting in history, perhaps? More in ecology? Well, if so, you are in a good place. Ah, but you only got lost? Well, well. Head over to <a href="http://www.itb.ie" target="_blank">official ITB website</a> if that's what you are looking for. Farewell!<br> But since some of you stayed, let me go through the purpose of this website. It's pretty simple, really. It is made to inform you, the viewer, about the journey of Institute of Technology, Blanchardstown, as this place will soon stop to exist under this name and will become TU Dublin. This adventure started many years ago, in 1999, on fields in the middle of nowhere. Soon later, a first building emerged and many young people gave it a chance - chance to grow, to educate and to become known. Those people flooded the front doors in hopes of decent education and possibilities. Some got what they wanted, some didn't. Some stayed, some left in order to find what they were looking for. <br> From there, the college bloomed. More buildings were introducted to accomodate ever-coming students and staff members. And till this day, it's growing bigger and stronger... but now, instead of functioning on its own, it will merge with two other colleges... We shall see how the future will unfold. </p>
+				</div>
+			</div>
+		</div>
+		
+<!-- ---------------------------------- SIDEBAR ---------------------------------- -->
+		<div id="sidebar">
+			<div>
+				<h2 class="title">Purpose of Website</h2>
+				<div class="entry">
+					<p>This website was made to educate and inform people about the story of ITB and the surrounding area. It is written in a narrative form to make it more interesting and less like a wikipedia-style website.
+					It's also made for an assignment for Second Year Web Design Module. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER COLUMNS ---------------------------------- -->
+<div id="footer-bg">
+	<div id="footer-content" class="container">
+		<div id="column1">
+			<h2>About Developer</h2>
+				<p>Hello! My name is Adriana, and I am starting out web-developer. My passion is creating, and I find happiness in being a better me today than the me yesterday. Currently studying Creative Digital Media at Institute of Technology, Blanchardstown, soon to become TU Dublin.
+				<br>
+				<br> "I do IMPOSSIBLE on the spot. 
+				<br>For MIRACLES, you have to wait a little longer."</p>
+		</div>
+		
+		<div id="column2">
+			<h2>ITB's address and contact information</h2>
+			<ul class="list-style2">
+				<li>Institute of Technology Blanchardstown,</li>
+				<li>Blanchardstown Road North, Dublin 15,D15 YV78</li>
+				<li>Tel: +353 (1) 8851000</li>
+				<li>Fax: +353 (1) 8851001</li>
+				<li>Email: info@itb.ie</li>
+			</ul>
+		</div>
+		<div id="column3">
+			<h2>Recommended Links</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="http://www.itb.ie/CourseFinder/az.html" target="_blank">Courses at ITB</a></li>
+				<li><a href="http://www.itb.ie/CampusStudentLife/index.html" target="_blank">Campus Life</a></li>
+				<li><a href="https://www.tu4dublin.ie" target="_blank">TU Dublin</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER ---------------------------------- -->
+<footer>
+	<p>© Adriana Jankiewicz, B00105953. Done for Web Design Assignment "Story of ITB".</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="images/open-book.png" type="image/gif">
+<meta name="keywords" content="ITB, Institute of Technology, Blanchardstown, Blanch, history, ecology" />
+<meta name="description" content="Story of ITB is a website dedicated to the history of ITB and surrounding area. It was made for a Second Year Web Design Assignment" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Story of ITB - Website</title>
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css"/> <!--  I tried to do fonts with @font-face, but it just doesn't want to work... -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<!-- ---------------------------------- BODY ---------------------------------- -->
+<body>
+<div id="wrapper">
+	<div id="logo" class="container">
+		<h1>Story of ITB - Website</h1>
+		<p>makes us look back on where we've come from and reflect on ITB's journey to get to where we are now.</p>
+	</div>
+	
+<!-- ---------------------------------- DROPDOWN MENU ---------------------------------- -->
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">History of ITB &darr;</a>
+				<div class="dropdown-content">
+					<a href="buildings.html">Buildings</a>
+					<a href="website.html" class="current_page_item">Website</a>
+					<a href="logo.html">Logo</a>
+				</div></li>	
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Ecology &darr;</a>
+				<div class="dropdown-content">
+					<a href="nature.html">Nature</a>
+					<a href="animals.html">Animals</a>
+					<a href="horticulture.html">Horticulture</a>
+				</div></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Local History &darr;</a>
+				<div class="dropdown-content">
+					<a href="evolution.html">Evolution of the area</a>
+					<a href="townhistory.html">History of town</a>
+				  </div></li>
+				
+				<li><a href="perspectives.html">Staff Perspectives</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- ---------------------------------- COLLAPSED NAV FOR MOBILE ---------------------------------- -->
+	 	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">History of ITB</a></li>
+			<li><a href="buildings.html">&nbsp;&nbsp;&nbsp;&nbsp;Buildings</a></li>
+			<li class="current_page_item"><a href="website.html">&nbsp;&nbsp;&nbsp;&nbsp;Website</a></li>
+			<li><a href="logo.html">&nbsp;&nbsp;&nbsp;&nbsp;Logo</a></li>
+			<li><a href="#">Ecology</a></li>
+			<li><a href="nature.html">&nbsp;&nbsp;&nbsp;&nbsp;Nature</a></li>
+			<li><a href="animals.html">&nbsp;&nbsp;&nbsp;&nbsp;Animals</a></li>
+			<li><a href="horticulture.html">&nbsp;&nbsp;&nbsp;&nbsp;Horticulture</a></li>
+			<li><a href="#">Local History</a></li>
+            <li><a href="evolution.html">&nbsp;&nbsp;&nbsp;&nbsp;Evolution of the area</a></li>
+            <li><a href="townhistory.html">&nbsp;&nbsp;&nbsp;&nbsp;History of town</a></li>
+			<li><a href="perspectives.html">Staff Perspectives</a></li>
+        </ul>
+				<a href="#" id="pull">Menu</a>
+    </nav>
+	
+<!-- ---------------------------------- CONTENT ---------------------------------- -->
+	<div id="page" class="container">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">Welcome to the Website</a></h2>
+				<div class="entry">
+					<p><br>Well, here you are! I thought you got lost... Curious how the website changed over all those years? It changed a lot, I can promise you that. It went from good designs to bad designs to even worse, to finally end up at a decent one. Sit down, get comfortable, I will tell you all about it. 
+					First ITB site can be tracked back to 2000 and it followed all the "trendy" things for that year - it had the visitors tracker and even an email link for those who would like to request a Prospectus. Looking at it now, at the end of 2018, it's hard to spot beauty in the seamed background and bright colors. Next came the cyan version of the site, in late 2000. It sported the look that can be seen even now. It was simple, but a little bit empty, but that changed in 2001 when they added in more content. <br> At 2002 something clearly went wrong. The whole site become weirdly small and the lack of color wasn't helping either. And this website lasted till 2003! They added in some colors - vibrant reds and oranges and completely got rid of the logo. Then, in August, the usuable area shrinked even further, but at least some colors had been added to the palette. And a black and white photograph, which is lovely, actually. <br> In 2004 came the era of blue, even the logo changed colors. The drop-shadow, common at the time, was also used... But then it all changed again in 2005. Blue was forgotten and grey colors took over the palette once again. Logo was slightly changed again, this time to look like a ghost of the previous versions... And some Irish was added in to the mix. And it stayed this way for a long, log time. <br> In 2009, the green colors dominated. Green, green everywhere. The logo had been completely redesigned to something that looks like falling dominos. And the funny thing is... It stayed this way till 2018. Nothing had changed since then, as if they fired their web developer... Maybe they did? <br> Anyway, anyway. Hope you liked this quick back-in-time travelling experience. Now, go look for more information on the other pages...</p>
+				</div>
+			</div>
+					<!-- ---------------------------------- Slideshow container ---------------------------------- -->
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+				<div class="numbertext">1 / 11</div>
+				<img src="images/website2000mar.png" style="width:100%" alt="Slideshow image">
+				<div class="text">The website from early 2000. Very colorful, sporting the old style logo and questionable background.</div>
+		  </div>
+
+		  <div class="mySlides fade">
+				<div class="numbertext">2 / 11</div>
+				<img src="images/website2000dec.png" style="width:100%" alt="Slideshow image">
+				<div class="text">Late 2000. Slightly improved... Actually, not really. </div>
+		  </div>
+
+		  <div class="mySlides fade">
+				<div class="numbertext">3 / 11</div>
+				<img src="images/website2001may.png" style="width:100%" alt="Slideshow image">
+				<div class="text">May 2001. The website started to get a little bit of content, but still looks very unprofessional.. But what can you expect from a website from 2001... </div>
+		  	</div>
+		
+			 <div class="mySlides fade">
+				<div class="numbertext">4 / 11</div>
+				<img src="images/website2002jan.png" style="width:100%" alt="Slideshow image">
+				<div class="text">Start of 2002 and the website simply got worse. </div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 11</div>
+				<img src="images/website2003mar.png" style="width:100%" alt="Slideshow image">
+				<div class="text">March, 2003. Improving! Slowly heading in the right direction... If not the bright colors, it wouldn't be so bad.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">6 / 11</div>
+				<img src="images/website2003aug.png" style="width:100%" alt="Slideshow image">
+				<div class="text">Still 2003, August this time. The designer and developer liked small things, so with each update, they attempted to make the website smaller, giving it a lot of empty space.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">7 / 11</div>
+				<img src="images/website2004jul.png" style="width:100%" alt="Slideshow image">
+				<div class="text">July 2004. Complete change of colors, but not of layout. Blue color seems trustworthy, but the layout still isn't perfect, but at least the logo changed from christmas green-red colors.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">8 / 11</div>
+				<img src="images/website2005may.png" style="width:100%" alt="Slideshow image">
+				<div class="text">May 2005. Complete change of colors again, but this time also the layout got changed. Still pretty small, but looks a lot better compared to the previous years.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">9 / 11</div>
+				<img src="images/website2009sep.png" style="width:100%" alt="Slideshow image">
+				<div class="text">The website didn't change for a long, long time... And finally, in 2009, they changed everything, again. From grey to green.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">10 / 11</div>
+				<img src="images/website2018nov.png" style="width:100%" alt="Slideshow image">
+				<div class="text">November, 2018. Nothing changed for so many years.</div>
+		  	</div>
+	
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		<br>
+	</div>
+
+<!-- ---------------------------------- SIDEBAR ---------------------------------- -->
+		<div id="sidebar">
+			<div>
+				<h2><a href="https://web.archive.org/web/20000101000000*/www.itb.ie" target="_blank">Wayback Machine</a></h2>
+				<ul class="list-style2">
+					<li>A Wayback Machine is like a digital library of websites - It tracks when and how the websites changed and saves that information so that it can be viewed again, even many years after. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER COLUMNS ---------------------------------- -->
+<div id="footer-bg">
+	<div id="footer-content" class="container">
+		<div id="column1">
+			<h2>About Developer</h2>
+				<p>Hello! My name is Adriana, and I am starting out web-developer. My passion is creating, and I find happiness in being a better me today than the me yesterday. Currently studying Creative Digital Media at Institute of Technology, Blanchardstown, soon to become TU Dublin.
+				<br>
+				<br> "I do IMPOSSIBLE on the spot. 
+				<br>For MIRACLES, you have to wait a little longer."</p>
+		</div>
+		
+		<div id="column2">
+			<h2>ITB's address and contact information</h2>
+			<ul class="list-style2">
+				<li>Institute of Technology Blanchardstown,</li>
+				<li>Blanchardstown Road North, Dublin 15,D15 YV78</li>
+				<li>Tel: +353 (1) 8851000</li>
+				<li>Fax: +353 (1) 8851001</li>
+				<li>Email: info@itb.ie</li>
+			</ul>
+		</div>
+		<div id="column3">
+			<h2>Recommended Links</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="http://www.itb.ie/CourseFinder/az.html" target="_blank">Courses at ITB</a></li>
+				<li><a href="http://www.itb.ie/CampusStudentLife/index.html" target="_blank">Campus Life</a></li>
+				<li><a href="https://www.tu4dublin.ie" target="_blank">TU Dublin</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER ---------------------------------- -->
+<footer>
+	<p>© Adriana Jankiewicz, B00105953. Done for Web Design Assignment "Story of ITB".</p>
+</footer>
+
+<!-- ---------------------------------- SCRIPT ---------------------------------- -->
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+	</script>
+</body>
+</html>

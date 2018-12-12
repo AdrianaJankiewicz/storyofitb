@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="images/open-book.png" type="image/gif">
+<meta name="keywords" content="ITB, Institute of Technology, Blanchardstown, Blanch, history, ecology" />
+<meta name="description" content="Story of ITB is a website dedicated to the history of ITB and surrounding area. It was made for a Second Year Web Design Assignment" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Story of ITB - Town History</title>
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css"/> <!--  I tried to do fonts with @font-face, but it just doesn't want to work... -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<!-- ---------------------------------- BODY ---------------------------------- -->
+<body>
+<div id="wrapper">
+	<div id="logo" class="container">
+		<h1>Story of ITB - Town History</h1>
+		<p>makes us look back on where we've come from and reflect on ITB's journey to get to where we are now.</p>
+	</div>
+	
+<!-- ---------------------------------- DROPDOWN MENU ---------------------------------- -->
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">History of ITB &darr;</a>
+				<div class="dropdown-content">
+					<a href="buildings.html">Buildings</a>
+					<a href="website.html">Website</a>
+					<a href="logo.html">Logo</a>
+				</div></li>	
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Ecology &darr;</a>
+				<div class="dropdown-content">
+					<a href="nature.html">Nature</a>
+					<a href="animals.html">Animals</a>
+					<a href="horticulture.html">Horticulture</a>
+				</div></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Local History &darr;</a>
+				<div class="dropdown-content">
+					<a href="evolution.html">Evolution of the area</a>
+					<a href="townhistory.html" class="current_page_item">History of town</a>
+				  </div></li>
+				
+				<li><a href="perspectives.html">Staff Perspectives</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- ---------------------------------- COLLAPSED NAV FOR MOBILE ---------------------------------- -->
+	 	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">History of ITB</a></li>
+			<li><a href="buildings.html">&nbsp;&nbsp;&nbsp;&nbsp;Buildings</a></li>
+			<li><a href="website.html">&nbsp;&nbsp;&nbsp;&nbsp;Website</a></li>
+			<li><a href="logo.html">&nbsp;&nbsp;&nbsp;&nbsp;Logo</a></li>
+			<li><a href="#">Ecology</a></li>
+			<li><a href="nature.html">&nbsp;&nbsp;&nbsp;&nbsp;Nature</a></li>
+			<li><a href="animals.html">&nbsp;&nbsp;&nbsp;&nbsp;Animals</a></li>
+			<li><a href="horticulture.html">&nbsp;&nbsp;&nbsp;&nbsp;Horticulture</a></li>
+			<li><a href="#">Local History</a></li>
+            <li><a href="evolution.html">&nbsp;&nbsp;&nbsp;&nbsp;Evolution of the area</a></li>
+            <li class="current_page_item"><a href="townhistory.html">&nbsp;&nbsp;&nbsp;&nbsp;History of town</a></li>
+			<li><a href="perspectives.html">Staff Perspectives</a></li>
+        </ul>
+				<a href="#" id="pull">Menu</a>
+    </nav>
+	
+<!-- ---------------------------------- CONTENT ---------------------------------- -->
+	<div id="page" class="container">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">Welcome to Town History</h2>
+				<div class="entry">
+					<p>You are curious how Blanchardstown came to be? That's good - its always good to be curious, and don't listen to all those people who say that curiosity killed the cat. I shall tell you a thing or two I found out myself just few hours ago. Time to travel back to... well, many, many years ago. 1260! Apparently, the Blanchardstown name came from a family called Blanchard who lived in this estate long time ago. Blanch, in French, supposely means white, and possibly refers to pale skin or light hair.<br> Let's fastforward to 1980s. Blanchardstown at that time was a quiet little place, surrounded by farmland, but the area developed and many new buildings have replaced the old ones, and new roads were built to support continous development of the area.</p>
+				</div>
+			</div>
+		</div>
+		
+<!-- ---------------------------------- SIDEBAR ---------------------------------- -->
+		<div id="sidebar">
+			<div>
+				<h2>Blanchardstown</h2>
+				<ul class="list-style2">
+					<li class="first"><a href="https://en.wikipedia.org/wiki/Blanchardstown" target="_blank">Wikipedia - Blanchardstown</a></li>
+					<li><a href="http://www.askaboutireland.ie/learning-zone/primary-students/looking-at-places/fingal/blanchardstown-through-ti/early-history/" target="_blank">Early History - Blanchardstown</a></li>
+					<li><a href="http://www.dublin.info/blanchardstown/" target="_blank">Dublin Info - Blanchardstown</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER COLUMNS ---------------------------------- -->
+<div id="footer-bg">
+	<div id="footer-content" class="container">
+		<div id="column1">
+			<h2>About Developer</h2>
+				<p>Hello! My name is Adriana, and I am starting out web-developer. My passion is creating, and I find happiness in being a better me today than the me yesterday. Currently studying Creative Digital Media at Institute of Technology, Blanchardstown, soon to become TU Dublin.
+				<br>
+				<br> "I do IMPOSSIBLE on the spot. 
+				<br>For MIRACLES, you have to wait a little longer."</p>
+		</div>
+		
+		<div id="column2">
+			<h2>ITB's address and contact information</h2>
+			<ul class="list-style2">
+				<li>Institute of Technology Blanchardstown,</li>
+				<li>Blanchardstown Road North, Dublin 15,D15 YV78</li>
+				<li>Tel: +353 (1) 8851000</li>
+				<li>Fax: +353 (1) 8851001</li>
+				<li>Email: info@itb.ie</li>
+			</ul>
+		</div>
+		<div id="column3">
+			<h2>Recommended Links</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="http://www.itb.ie/CourseFinder/az.html" target="_blank">Courses at ITB</a></li>
+				<li><a href="http://www.itb.ie/CampusStudentLife/index.html" target="_blank">Campus Life</a></li>
+				<li><a href="https://www.tu4dublin.ie" target="_blank">TU Dublin</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER ---------------------------------- -->
+<footer>
+	<p>© Adriana Jankiewicz, B00105953. Done for Web Design Assignment "Story of ITB".</p>
+</footer>
+
+</body>
+</html>

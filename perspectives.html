@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="images/open-book.png" type="image/gif">
+<meta name="keywords" content="ITB, Institute of Technology, Blanchardstown, Blanch, history, ecology" />
+<meta name="description" content="Story of ITB is a website dedicated to the history of ITB and surrounding area. It was made for a Second Year Web Design Assignment" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Story of ITB - Perspectives</title>
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css"/> <!--  I tried to do fonts with @font-face, but it just doesn't want to work... -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<!-- ---------------------------------- BODY ---------------------------------- -->
+<body>
+<div id="wrapper">
+	<div id="logo" class="container">
+		<h1>Story of ITB - Perspectives</h1>
+		<p>makes us look back on where we've come from and reflect on ITB's journey to get to where we are now.</p>
+	</div>
+	
+<!-- ---------------------------------- DROPDOWN MENU ---------------------------------- -->
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">History of ITB &darr;</a>
+				<div class="dropdown-content">
+					<a href="buildings.html">Buildings</a>
+					<a href="website.html">Website</a>
+					<a href="logo.html">Logo</a>
+				</div></li>	
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Ecology &darr;</a>
+				<div class="dropdown-content">
+					<a href="nature.html">Nature</a>
+					<a href="animals.html">Animals</a>
+					<a href="horticulture.html">Horticulture</a>
+				</div></li>
+				
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Local History &darr;</a>
+				<div class="dropdown-content">
+					<a href="evolution.html">Evolution of the area</a>
+					<a href="townhistory.html">History of town</a>
+				  </div></li>
+				
+				<li class="current_page_item"><a href="perspectives.html">Staff Perspectives</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- ---------------------------------- COLLAPSED NAV FOR MOBILE ---------------------------------- -->
+	 	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">History of ITB</a></li>
+			<li><a href="buildings.html">&nbsp;&nbsp;&nbsp;&nbsp;Buildings</a></li>
+			<li><a href="website.html">&nbsp;&nbsp;&nbsp;&nbsp;Website</a></li>
+			<li><a href="logo.html">&nbsp;&nbsp;&nbsp;&nbsp;Logo</a></li>
+			<li><a href="#">Ecology</a></li>
+			<li><a href="nature.html">&nbsp;&nbsp;&nbsp;&nbsp;Nature</a></li>
+			<li><a href="animals.html">&nbsp;&nbsp;&nbsp;&nbsp;Animals</a></li>
+			<li><a href="horticulture.html">&nbsp;&nbsp;&nbsp;&nbsp;Horticulture</a></li>
+			<li><a href="#">Local History</a></li>
+            <li><a href="evolution.html">&nbsp;&nbsp;&nbsp;&nbsp;Evolution of the area</a></li>
+            <li><a href="townhistory.html">&nbsp;&nbsp;&nbsp;&nbsp;History of town</a></li>
+			<li class="current_page_item"><a href="perspectives.html">Staff Perspectives</a></li>
+        </ul>
+				<a href="#" id="pull">Menu</a>
+    </nav>
+	
+<!-- ---------------------------------- CONTENT ---------------------------------- -->
+	<div id="page" class="container">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">Welcome to the Staff Perspectives</h2>
+				<div class="entry">
+					<p>Each staff member has his or her own history. Some started at the same time as the ITB's adventure, some are much, much newer... yet they are all very interesting and unique. We have surveyed the staff in order to find out about their stories, how they started their journey and where they hope to head. Have a look! <br> </p>
+				</div>
+			</div>
+			<!-- ---------------------------------- Slideshow container ---------------------------------- -->
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+				<div class="numbertext">1 / 11</div>
+				<img src="images/staffartboard1.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">Nice to see the optimism!</div>
+		  </div>
+
+		  <div class="mySlides fade">
+				<div class="numbertext">2 / 11</div>
+				<img src="images/staffartboard2.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">How a simple overhead projector can give so much happiness... </div>
+		  </div>
+
+		  <div class="mySlides fade">
+				<div class="numbertext">3 / 11</div>
+				<img src="images/staffartboard3.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">Very interesting answer, I wish it was a bit longer to tell the whole story, but love the honesty. </div>
+		  	</div>
+		
+			 <div class="mySlides fade">
+				<div class="numbertext">4 / 11</div>
+				<img src="images/staffartboard4.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">It's nice to see some well-worded answer. Can "letters after the name" be taken away from people, though? I think they can be. Plus, they mean so little now with how the world is progressing. </div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 11</div>
+				<img src="images/staffartboard5.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">Not all comments have to be possitive and its interesting to see that not only students are unhappy with certain aspects of the college.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">6 / 11</div>
+				<img src="images/staffartboard6.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">Agreed! But... not many students from Blanchardstown actually attend this college. A good few locals don't even know where ITB is.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">7 / 11</div>
+				<img src="images/staffartboard7.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">Wild rabbits! I think A block labrooms will become favourite rooms from now on.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">8 / 11</div>
+				<img src="images/staffartboard8.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">Education is also very highly dependent on the lecturers. How can you put anything into it, when you are given barely anything?</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">9 / 11</div>
+				<img src="images/staffartboard9.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">Interesting - I think everyone wonders if we all gonna get moved around the campuses.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">10 / 11</div>
+				<img src="images/staffartboard10.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">More parking spaces sounds lovely... Make them free too. Staff should be assessed every year, not only once when the college moves into the next stage.</div>
+		  	</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">11 / 11</div>
+				<img src="images/staffartboard11.jpg" style="width:100%" alt="Slideshow image">
+				<div class="text">If only all voices were heard.</div>
+		  	</div>
+	
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		<br>
+		</div>
+
+<!-- ---------------------------------- SIDEBAR ---------------------------------- -->
+		<div id="sidebar">
+			<div>
+				<h2 class="title">Survey</h2>
+				<div class="entry">
+					<p>The survey was made by the class in order to get the answers we needed for our websites. In fact, there were two different surveys. One was focusing on the staff members and asked questions about their favourite area, how they started and so on. The other was for the students.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER COLUMNS ---------------------------------- -->
+<div id="footer-bg">
+	<div id="footer-content" class="container">
+		<div id="column1">
+			<h2>About Developer</h2>
+				<p>Hello! My name is Adriana, and I am starting out web-developer. My passion is creating, and I find happiness in being a better me today than the me yesterday. Currently studying Creative Digital Media at Institute of Technology, Blanchardstown, soon to become TU Dublin.
+				<br>
+				<br> "I do IMPOSSIBLE on the spot. 
+				<br>For MIRACLES, you have to wait a little longer."</p>
+		</div>
+		
+		<div id="column2">
+			<h2>ITB's address and contact information</h2>
+			<ul class="list-style2">
+				<li>Institute of Technology Blanchardstown,</li>
+				<li>Blanchardstown Road North, Dublin 15,D15 YV78</li>
+				<li>el: +353 (1) 8851000</li>
+				<li>Fax: +353 (1) 8851001</li>
+				<li>Email: info@itb.ie</li>
+			</ul>
+		</div>
+		<div id="column3">
+			<h2>Recommended Links</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="http://www.itb.ie/CourseFinder/az.html" target="_blank">Courses at ITB</a></li>
+				<li><a href="http://www.itb.ie/CampusStudentLife/index.html" target="_blank">Campus Life</a></li>
+				<li><a href="https://www.tu4dublin.ie" target="_blank">TU Dublin</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+<!-- ---------------------------------- FOOTER ---------------------------------- -->
+<footer>
+	<p>© Adriana Jankiewicz, B00105953. Done for Web Design Assignment "Story of ITB".</p>
+</footer>
+	
+<!-- ---------------------------------- SCRIPT ---------------------------------- -->	
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
